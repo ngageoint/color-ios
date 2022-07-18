@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045495542885887F00A6331F /* CLRColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454954E2885887F00A6331F /* CLRColor.h */; };
+		045495552885887F00A6331F /* CLRColorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454954F2885887F00A6331F /* CLRColorConstants.m */; };
+		045495562885887F00A6331F /* CLRColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 045495502885887F00A6331F /* CLRColorUtils.m */; };
+		045495572885887F00A6331F /* CLRColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 045495512885887F00A6331F /* CLRColorUtils.h */; };
+		045495582885887F00A6331F /* CLRColorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 045495522885887F00A6331F /* CLRColorConstants.h */; };
+		045495592885887F00A6331F /* CLRColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 045495532885887F00A6331F /* CLRColor.m */; };
+		0454955C28858B5D00A6331F /* CLRColorUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454955A28858B5D00A6331F /* CLRColorUtilsTest.m */; };
+		0454955D28858B5D00A6331F /* CLRColorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454955B28858B5D00A6331F /* CLRColorTest.m */; };
+		0454956028858C3D00A6331F /* CLRTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454955E28858C3D00A6331F /* CLRTestUtils.m */; };
+		045495612885946E00A6331F /* color_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 042FC6D41B96453E00549A4B /* color_ios.h */; };
+		045495622885947F00A6331F /* color-ios-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 042FC69E1B96421E00549A4B /* color-ios-Prefix.pch */; };
+		045495632885949200A6331F /* color-ios-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0472B51A1C03590500496B87 /* color-ios-Bridging-Header.h */; };
+		045495642885955200A6331F /* color_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042FC64B1B963FE500549A4B /* color_ios.framework */; };
 		2070766DA1441D591ED0B917 /* libPods-color-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C74346D60042A2C0D62889 /* libPods-color-iosTests.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +41,16 @@
 		042FC65C1B963FE500549A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042FC69E1B96421E00549A4B /* color-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "color-ios-Prefix.pch"; sourceTree = "<group>"; };
 		042FC6D41B96453E00549A4B /* color_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color_ios.h; sourceTree = "<group>"; };
+		0454954E2885887F00A6331F /* CLRColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRColor.h; sourceTree = "<group>"; };
+		0454954F2885887F00A6331F /* CLRColorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRColorConstants.m; sourceTree = "<group>"; };
+		045495502885887F00A6331F /* CLRColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRColorUtils.m; sourceTree = "<group>"; };
+		045495512885887F00A6331F /* CLRColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRColorUtils.h; sourceTree = "<group>"; };
+		045495522885887F00A6331F /* CLRColorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRColorConstants.h; sourceTree = "<group>"; };
+		045495532885887F00A6331F /* CLRColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRColor.m; sourceTree = "<group>"; };
+		0454955A28858B5D00A6331F /* CLRColorUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRColorUtilsTest.m; sourceTree = "<group>"; };
+		0454955B28858B5D00A6331F /* CLRColorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRColorTest.m; sourceTree = "<group>"; };
+		0454955E28858C3D00A6331F /* CLRTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRTestUtils.m; sourceTree = "<group>"; };
+		0454955F28858C3D00A6331F /* CLRTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRTestUtils.h; sourceTree = "<group>"; };
 		0472B51A1C03590500496B87 /* color-ios-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "color-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		73029AF16F858F06EBCEC53C /* Pods-color-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-color-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-color-iosTests/Pods-color-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C74346D60042A2C0D62889 /* libPods-color-iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-color-iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045495642885955200A6331F /* color_ios.framework in Frameworks */,
 				2070766DA1441D591ED0B917 /* libPods-color-iosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				042FC6D41B96453E00549A4B /* color_ios.h */,
+				0454954E2885887F00A6331F /* CLRColor.h */,
+				045495532885887F00A6331F /* CLRColor.m */,
+				045495522885887F00A6331F /* CLRColorConstants.h */,
+				0454954F2885887F00A6331F /* CLRColorConstants.m */,
+				045495512885887F00A6331F /* CLRColorUtils.h */,
+				045495502885887F00A6331F /* CLRColorUtils.m */,
 				042FC69E1B96421E00549A4B /* color-ios-Prefix.pch */,
 				042FC64E1B963FE500549A4B /* Supporting Files */,
 				0472B51A1C03590500496B87 /* color-ios-Bridging-Header.h */,
@@ -95,6 +125,10 @@
 		042FC65A1B963FE500549A4B /* color-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				0454955B28858B5D00A6331F /* CLRColorTest.m */,
+				0454955A28858B5D00A6331F /* CLRColorUtilsTest.m */,
+				0454955F28858C3D00A6331F /* CLRTestUtils.h */,
+				0454955E28858C3D00A6331F /* CLRTestUtils.m */,
 				042FC65B1B963FE500549A4B /* Supporting Files */,
 				041F18C924C6044C001311E4 /* color-iosTests-Bridging-Header.h */,
 			);
@@ -133,6 +167,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045495632885949200A6331F /* color-ios-Bridging-Header.h in Headers */,
+				045495622885947F00A6331F /* color-ios-Prefix.pch in Headers */,
+				045495612885946E00A6331F /* color_ios.h in Headers */,
+				045495572885887F00A6331F /* CLRColorUtils.h in Headers */,
+				045495542885887F00A6331F /* CLRColor.h in Headers */,
+				045495582885887F00A6331F /* CLRColorConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045495552885887F00A6331F /* CLRColorConstants.m in Sources */,
+				045495592885887F00A6331F /* CLRColor.m in Sources */,
+				045495562885887F00A6331F /* CLRColorUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0454955C28858B5D00A6331F /* CLRColorUtilsTest.m in Sources */,
+				0454955D28858B5D00A6331F /* CLRColorTest.m in Sources */,
+				0454956028858C3D00A6331F /* CLRTestUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +450,7 @@
 				INFOPLIST_FILE = "color-ios/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mil.nga.color.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = mil.nga.color;
 				PRODUCT_NAME = color_ios;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -423,7 +469,7 @@
 				INFOPLIST_FILE = "color-ios/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mil.nga.color.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = mil.nga.color;
 				PRODUCT_NAME = color_ios;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;

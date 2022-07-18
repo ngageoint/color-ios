@@ -10,5 +10,8 @@
 #define color_ios_Bridging_Header_h
 
 #import "color_ios.h"
+#import "CLRColor.h"
+#import "CLRColorConstants.h"
+#import "CLRColorUtils.h"
 
 #endif /* color_ios_Bridging_Header_h */
