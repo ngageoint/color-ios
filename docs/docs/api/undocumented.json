@@ -1,0 +1,124 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 11,
+      "symbol": "CLR_COLOR_BLACK",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 12,
+      "symbol": "CLR_COLOR_BLUE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 13,
+      "symbol": "CLR_COLOR_BROWN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 14,
+      "symbol": "CLR_COLOR_CYAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 15,
+      "symbol": "CLR_COLOR_DKGRAY",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 16,
+      "symbol": "CLR_COLOR_GRAY",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 17,
+      "symbol": "CLR_COLOR_GREEN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 18,
+      "symbol": "CLR_COLOR_LTGRAY",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 19,
+      "symbol": "CLR_COLOR_MAGENTA",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 20,
+      "symbol": "CLR_COLOR_ORANGE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 21,
+      "symbol": "CLR_COLOR_PINK",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 22,
+      "symbol": "CLR_COLOR_PURPLE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 23,
+      "symbol": "CLR_COLOR_RED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 24,
+      "symbol": "CLR_COLOR_VIOLET",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 25,
+      "symbol": "CLR_COLOR_WHITE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 26,
+      "symbol": "CLR_COLOR_YELLOW",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/osbornb/git/color-ios/color-ios/CLRColorConstants.h",
+      "line": 28,
+      "symbol": "CLRColorConstants",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/osbornb/git/color-ios"
+}
