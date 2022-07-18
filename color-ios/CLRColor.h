@@ -13,7 +13,7 @@
  * Color representation with support for hex, RBG, arithmetic RBG, and integer
  * colors
  */
-@interface CLRColor : NSObject
+@interface CLRColor : NSObject <NSMutableCopying>
 
 /**
  * Red arithmetic color value
@@ -34,6 +34,328 @@
  * Opacity arithmetic value
  */
 @property (nonatomic) float opacity;
+
+/**
+ * Create a black color
+ *
+ * @return color
+ */
++(CLRColor *) black;
+
+/**
+ * Create a blue color
+ *
+ * @return color
+ */
++(CLRColor *) blue;
+
+/**
+ * Create a brown color
+ *
+ * @return color
+ */
++(CLRColor *) brown;
+
+/**
+ * Create a cyan color
+ *
+ * @return color
+ */
++(CLRColor *) cyan;
+
+/**
+ * Create a dark gray color
+ *
+ * @return color
+ */
++(CLRColor *) darkGray;
+
+/**
+ * Create a gray color
+ *
+ * @return color
+ */
++(CLRColor *) gray;
+
+/**
+ * Create a green color
+ *
+ * @return color
+ */
++(CLRColor *) green;
+
+/**
+ * Create a light gray color
+ *
+ * @return color
+ */
++(CLRColor *) lightGray;
+
+/**
+ * Create a magenta color
+ *
+ * @return color
+ */
++(CLRColor *) magenta;
+
+/**
+ * Create an orange color
+ *
+ * @return color
+ */
++(CLRColor *) orange;
+
+/**
+ * Create a pink color
+ *
+ * @return color
+ */
++(CLRColor *) pink;
+
+/**
+ * Create a purple color
+ *
+ * @return color
+ */
++(CLRColor *) purple;
+
+/**
+ * Create a red color
+ *
+ * @return color
+ */
++(CLRColor *) red;
+
+/**
+ * Create a violet color
+ *
+ * @return color
+ */
++(CLRColor *) violet;
+
+/**
+ * Create a white color
+ *
+ * @return color
+ */
++(CLRColor *) white;
+
+/**
+ * Create a yellow color
+ *
+ * @return color
+ */
++(CLRColor *) yellow;
+
+/**
+ * Create the color in hex
+ *
+ * @param color
+ *            hex color in format #RRGGBB, RRGGBB, #RGB, RGB, #AARRGGBB,
+ *            AARRGGBB, #ARGB, or ARGB
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHex: (NSString *) color;
+
+/**
+ * Create the color in hex with an opacity
+ *
+ * @param color
+ *            hex color in format #RRGGBB, RRGGBB, #RGB, RGB, #AARRGGBB,
+ *            AARRGGBB, #ARGB, or ARGB
+ * @param opacity
+ *            opacity float inclusively between 0.0 and 1.0
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHex: (NSString *) color andOpacity: (float) opacity;
+
+/**
+ * Create the color in hex with an alpha
+ *
+ * @param color
+ *            hex color in format #RRGGBB, RRGGBB, #RGB, RGB, #AARRGGBB,
+ *            AARRGGBB, #ARGB, or ARGB
+ * @param alpha
+ *            alpha integer color inclusively between 0 and 255
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHex: (NSString *) color andAlpha: (int) alpha;
+
+/**
+ * Create the color with individual hex colors
+ *
+ * @param red
+ *            red hex color in format RR
+ * @param green
+ *            green hex color in format GG
+ * @param blue
+ *            blue hex color in format BB
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHexRed: (NSString *) red andGreen: (NSString *) green andBlue: (NSString *) blue;
+
+/**
+ * Create the color with individual hex colors and alpha
+ *
+ * @param red
+ *            red hex color in format RR
+ * @param green
+ *            green hex color in format GG
+ * @param blue
+ *            blue hex color in format BB
+ * @param alpha
+ *            alpha hex color in format AA
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHexRed: (NSString *) red andGreen: (NSString *) green andBlue: (NSString *) blue andAlpha: (NSString *) alpha;
+
+/**
+ * Create the color with individual hex colors and opacity
+ *
+ * @param red
+ *            red hex color in format RR
+ * @param green
+ *            green hex color in format GG
+ * @param blue
+ *            blue hex color in format BB
+ * @param opacity
+ *            opacity float inclusively between 0.0 and 1.0
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHexRed: (NSString *) red andGreen: (NSString *) green andBlue: (NSString *) blue andOpacity: (float) opacity;
+
+/**
+ * Create the color with RGB values
+ *
+ * @param red
+ *            red integer color inclusively between 0 and 255
+ * @param green
+ *            green integer color inclusively between 0 and 255
+ * @param blue
+ *            blue integer color inclusively between 0 and 255
+ *
+ * @return color
+ */
++(CLRColor *) colorWithRed: (int) red andGreen: (int) green andBlue: (int) blue;
+
+/**
+ * Create the color with RGBA values
+ *
+ * @param red
+ *            red integer color inclusively between 0 and 255
+ * @param green
+ *            green integer color inclusively between 0 and 255
+ * @param blue
+ *            blue integer color inclusively between 0 and 255
+ * @param alpha
+ *            alpha integer color inclusively between 0 and 255
+ *
+ * @return color
+ */
++(CLRColor *) colorWithRed: (int) red andGreen: (int) green andBlue: (int) blue andAlpha: (int) alpha;
+
+/**
+ * Create the color with RGBA values
+ *
+ * @param red
+ *            red integer color inclusively between 0 and 255
+ * @param green
+ *            green integer color inclusively between 0 and 255
+ * @param blue
+ *            blue integer color inclusively between 0 and 255
+ * @param opacity
+ *            opacity float inclusively between 0.0 and 1.0
+ *
+ * @return color
+ */
++(CLRColor *) colorWithRed: (int) red andGreen: (int) green andBlue: (int) blue andOpacity: (float) opacity;
+
+/**
+ * Create the color with arithmetic RGB values
+ *
+ * @param red
+ *            red float color inclusively between 0.0 and 1.0
+ * @param green
+ *            green float color inclusively between 0.0 and 1.0
+ * @param blue
+ *            blue float color inclusively between 0.0 and 1.0
+ *
+ * @return color
+ */
++(CLRColor *) colorWithArithmeticRed: (float) red andGreen: (float) green andBlue: (float) blue;
+
+/**
+ * Create the color with arithmetic RGB values
+ *
+ * @param red
+ *            red float color inclusively between 0.0 and 1.0
+ * @param green
+ *            green float color inclusively between 0.0 and 1.0
+ * @param blue
+ *            blue float color inclusively between 0.0 and 1.0
+ * @param opacity
+ *            opacity float inclusively between 0.0 and 1.0
+ *
+ * @return color
+ */
++(CLRColor *) colorWithArithmeticRed: (float) red andGreen: (float) green andBlue: (float) blue andOpacity: (float) opacity;
+
+/**
+ * Create the color with HSL (hue, saturation, lightness) or HSL (alpha)
+ * values
+ *
+ * @param hue
+ *            hue
+ * @param saturation
+ *            saturation
+ * @param lightness
+ *            lightness
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHue: (float) hue andSaturation: (float) saturation andLightness: (float) lightness;
+
+/**
+ * Create the color with HSLA (hue, saturation, lightness, alpha) values
+ *
+ * @param hue
+ *            hue
+ * @param saturation
+ *            saturation
+ * @param lightness
+ *            lightness
+ * @param alpha
+ *            alpha inclusively between 0.0 and 1.0
+ *
+ * @return color
+ */
++(CLRColor *) colorWithHue: (float) hue andSaturation: (float) saturation andLightness: (float) lightness andAlpha: (float) alpha;
+
+/**
+ * Create the color as a single integer
+ *
+ * @param color
+ *            color integer
+ *
+ * @return color
+ */
++(CLRColor *) colorWithColor: (int) color;
+
+/**
+ * Create the color as a single unsigned integer
+ *
+ * @param color
+ *            color unsigned integer
+ *
+ * @return color
+ */
++(CLRColor *) colorWithUnsignedColor: (unsigned int) color;
 
 /**
  * Default color initializer, opaque black
@@ -251,6 +573,16 @@
  * @return new color
  */
 -(instancetype) initWithUnsignedColor: (unsigned int) color;
+
+/**
+ * Copy Initialize
+ *
+ * @param color
+ *            color to copy
+ *
+ * @return new color
+ */
+-(instancetype) initWithCLRColor: (CLRColor *) color;
 
 /**
  * Set the color in hex
@@ -656,34 +988,6 @@
  * @return alpha integer color inclusively between 0 and 255
  */
 -(int) alpha;
-
-/**
- * Get the red color as an arithmetic float
- *
- * @return red float color inclusively between 0.0 and 1.0
- */
--(float) redArithmetic;
-
-/**
- * Get the green color as an arithmetic float
- *
- * @return green float color inclusively between 0.0 and 1.0
- */
--(float) greenArithmetic;
-
-/**
- * Get the blue color as an arithmetic float
- *
- * @return blue float color inclusively between 0.0 and 1.0
- */
--(float) blueArithmetic;
-
-/**
- * Get the opacity as an arithmetic float
- *
- * @return opacity float inclusively between 0.0 and 1.0
- */
--(float) opacity;
 
 /**
  * Get the alpha color as an arithmetic float

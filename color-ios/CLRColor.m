@@ -8,8 +8,133 @@
 
 #import "CLRColor.h"
 #import "CLRColorUtils.h"
+#import "CLRColorConstants.h"
 
 @implementation CLRColor
+
++(CLRColor *) black{
+    return [self colorWithHex:CLR_COLOR_BLACK];
+}
+
++(CLRColor *) blue{
+    return [self colorWithHex:CLR_COLOR_BLUE];
+}
+
++(CLRColor *) brown{
+    return [self colorWithHex:CLR_COLOR_BROWN];
+}
+
++(CLRColor *) cyan{
+    return [self colorWithHex:CLR_COLOR_CYAN];
+}
+
++(CLRColor *) darkGray{
+    return [self colorWithHex:CLR_COLOR_DKGRAY];
+}
+
++(CLRColor *) gray{
+    return [self colorWithHex:CLR_COLOR_GRAY];
+}
+
++(CLRColor *) green{
+    return [self colorWithHex:CLR_COLOR_GREEN];
+}
+
++(CLRColor *) lightGray{
+    return [self colorWithHex:CLR_COLOR_LTGRAY];
+}
+
++(CLRColor *) magenta{
+    return [self colorWithHex:CLR_COLOR_MAGENTA];
+}
+
++(CLRColor *) orange{
+    return [self colorWithHex:CLR_COLOR_ORANGE];
+}
+
++(CLRColor *) pink{
+    return [self colorWithHex:CLR_COLOR_PINK];
+}
+
++(CLRColor *) purple{
+    return [self colorWithHex:CLR_COLOR_PURPLE];
+}
+
++(CLRColor *) red{
+    return [self colorWithHex:CLR_COLOR_RED];
+}
+
++(CLRColor *) violet{
+    return [self colorWithHex:CLR_COLOR_VIOLET];
+}
+
++(CLRColor *) white{
+    return [self colorWithHex:CLR_COLOR_WHITE];
+}
+
++(CLRColor *) yellow{
+    return [self colorWithHex:CLR_COLOR_YELLOW];
+}
+
++(CLRColor *) colorWithHex: (NSString *) color{
+    return [[CLRColor alloc] initWithHex:color];
+}
+
++(CLRColor *) colorWithHex: (NSString *) color andOpacity: (float) opacity{
+    return [[CLRColor alloc] initWithHex:color andOpacity:opacity];
+}
+
++(CLRColor *) colorWithHex: (NSString *) color andAlpha: (int) alpha{
+    return [[CLRColor alloc] initWithHex:color andAlpha:alpha];
+}
+
++(CLRColor *) colorWithHexRed: (NSString *) red andGreen: (NSString *) green andBlue: (NSString *) blue{
+    return [[CLRColor alloc] initWithHexRed:red andGreen:green andBlue:blue];
+}
+
++(CLRColor *) colorWithHexRed: (NSString *) red andGreen: (NSString *) green andBlue: (NSString *) blue andAlpha: (NSString *) alpha{
+    return [[CLRColor alloc] initWithHexRed:red andGreen:green andBlue:blue andAlpha:alpha];
+}
+
++(CLRColor *) colorWithHexRed: (NSString *) red andGreen: (NSString *) green andBlue: (NSString *) blue andOpacity: (float) opacity{
+    return [[CLRColor alloc] initWithHexRed:red andGreen:green andBlue:blue andOpacity:opacity];
+}
+
++(CLRColor *) colorWithRed: (int) red andGreen: (int) green andBlue: (int) blue{
+    return [[CLRColor alloc] initWithRed:red andGreen:green andBlue:blue];
+}
+
++(CLRColor *) colorWithRed: (int) red andGreen: (int) green andBlue: (int) blue andAlpha: (int) alpha{
+    return [[CLRColor alloc] initWithRed:red andGreen:green andBlue:blue andAlpha:alpha];
+}
+
++(CLRColor *) colorWithRed: (int) red andGreen: (int) green andBlue: (int) blue andOpacity: (float) opacity{
+    return [[CLRColor alloc] initWithRed:red andGreen:green andBlue:blue andOpacity:opacity];
+}
+
++(CLRColor *) colorWithArithmeticRed: (float) red andGreen: (float) green andBlue: (float) blue{
+    return [[CLRColor alloc] initWithArithmeticRed:red andGreen:green andBlue:blue];
+}
+
++(CLRColor *) colorWithArithmeticRed: (float) red andGreen: (float) green andBlue: (float) blue andOpacity: (float) opacity{
+    return [[CLRColor alloc] initWithArithmeticRed:red andGreen:green andBlue:blue andOpacity:opacity];
+}
+
++(CLRColor *) colorWithHue: (float) hue andSaturation: (float) saturation andLightness: (float) lightness{
+    return [[CLRColor alloc] initWithHue:hue andSaturation:saturation andLightness:lightness];
+}
+
++(CLRColor *) colorWithHue: (float) hue andSaturation: (float) saturation andLightness: (float) lightness andAlpha: (float) alpha{
+    return [[CLRColor alloc] initWithHue:hue andSaturation:saturation andLightness:lightness andAlpha:alpha];
+}
+
++(CLRColor *) colorWithColor: (int) color{
+    return [[CLRColor alloc] initWithColor:color];
+}
+
++(CLRColor *) colorWithUnsignedColor: (unsigned int) color{
+    return [[CLRColor alloc] initWithUnsignedColor:color];
+}
 
 -(instancetype) init{
     self = [super init];
@@ -138,6 +263,17 @@
     self = [self init];
     if(self != nil){
         [self setUnsignedColor:color];
+    }
+    return self;
+}
+
+-(instancetype) initWithCLRColor: (CLRColor *) color{
+    self = [self init];
+    if(self != nil){
+        _redArithmetic = color.redArithmetic;
+        _greenArithmetic = color.greenArithmetic;
+        _blueArithmetic = color.blueArithmetic;
+        _opacity = color.opacity;
     }
     return self;
 }
@@ -392,6 +528,10 @@
 
 -(float) lightness{
     return [self hsl][2];
+}
+
+-(id) mutableCopyWithZone: (NSZone *) zone{
+    return [[CLRColor alloc] initWithCLRColor:self];
 }
 
 @end
