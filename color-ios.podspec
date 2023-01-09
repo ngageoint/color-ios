@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'color-ios'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.license          =  {:type => 'MIT', :file => 'LICENSE' }
   s.summary          = 'iOS SDK for Color'
   s.homepage         = 'https://github.com/ngageoint/color-ios'
