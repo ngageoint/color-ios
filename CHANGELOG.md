@@ -4,9 +4,9 @@ Adheres to [Semantic Versioning](http://semver.org/).
 
 ---
 
-## 1.0.1 (TBD)
+## [1.0.1](https://github.com/ngageoint/color-ios/releases/tag/1.0.1) (01-09-2023)
 
-* TBD
+* Imports cleanup
 
 ## [1.0.0](https://github.com/ngageoint/color-ios/releases/tag/1.0.0) (07-18-2022)
 
