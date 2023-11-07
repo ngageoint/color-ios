@@ -22,6 +22,7 @@
 		045495642885955200A6331F /* color_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042FC64B1B963FE500549A4B /* color_ios.framework */; };
 		045495682885AEBF00A6331F /* CLRReadmeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 045495662885AEBF00A6331F /* CLRReadmeTest.m */; };
 		045495692885AEBF00A6331F /* CLRSwiftReadmeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045495672885AEBF00A6331F /* CLRSwiftReadmeTest.swift */; };
+		0493A5922AE81718000B75E6 /* color_ios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493A5912AE81718000B75E6 /* color_ios.swift */; };
 		2070766DA1441D591ED0B917 /* libPods-color-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C74346D60042A2C0D62889 /* libPods-color-iosTests.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		045495662885AEBF00A6331F /* CLRReadmeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRReadmeTest.m; sourceTree = "<group>"; };
 		045495672885AEBF00A6331F /* CLRSwiftReadmeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRSwiftReadmeTest.swift; sourceTree = "<group>"; };
 		0472B51A1C03590500496B87 /* color-ios-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "color-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		0493A5912AE81718000B75E6 /* color_ios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = color_ios.swift; sourceTree = "<group>"; };
 		73029AF16F858F06EBCEC53C /* Pods-color-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-color-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-color-iosTests/Pods-color-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6C74346D60042A2C0D62889 /* libPods-color-iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-color-iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCFC787E85937478095557C /* Pods-color-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-color-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-color-iosTests/Pods-color-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				042FC6D41B96453E00549A4B /* color_ios.h */,
+				0493A5912AE81718000B75E6 /* color_ios.swift */,
 				0454954E2885887F00A6331F /* CLRColor.h */,
 				045495532885887F00A6331F /* CLRColor.m */,
 				045495522885887F00A6331F /* CLRColorConstants.h */,
@@ -235,6 +238,7 @@
 				TargetAttributes = {
 					042FC64A1B963FE500549A4B = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 1500;
 					};
 					042FC6551B963FE500549A4B = {
 						CreatedOnToolsVersion = 6.4;
@@ -307,6 +311,7 @@
 				045495552885887F00A6331F /* CLRColorConstants.m in Sources */,
 				045495592885887F00A6331F /* CLRColor.m in Sources */,
 				045495562885887F00A6331F /* CLRColorUtils.m in Sources */,
+				0493A5922AE81718000B75E6 /* color_ios.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +457,7 @@
 		042FC6621B963FE500549A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -464,6 +470,8 @@
 				PRODUCT_NAME = color_ios;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -471,6 +479,7 @@
 		042FC6631B963FE500549A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +492,7 @@
 				PRODUCT_NAME = color_ios;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -491,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDCFC787E85937478095557C /* Pods-color-iosTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -514,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73029AF16F858F06EBCEC53C /* Pods-color-iosTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
