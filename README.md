@@ -18,6 +18,7 @@ Software source code previously released under an open source license and then m
 View the latest [Appledoc](http://ngageoint.github.io/color-ios/docs/api/)
 
 ```objectivec
+@import Color;
 
 CLRColor *rgb = [CLRColor colorWithRed:154 andGreen:205 andBlue:50];
 CLRColor *rgba = [CLRColor colorWithRed:255 andGreen:165 andBlue:0 andAlpha:64];
@@ -62,42 +63,47 @@ float lightness = [color lightness];
 
 [![Build & Test](https://github.com/ngageoint/color-ios/workflows/Build%20&%20Test/badge.svg)](https://github.com/ngageoint/color-ios/actions/workflows/build-test.yml)
 
-Build this repository using Xcode and/or CocoaPods:
+Build this repository SPM:
 
-    pod install
+    swift build
 
-Open color-ios.xcworkspace in Xcode or build from command line:
+Run tests for SPM:
+    
+    swift test
+    
+Open Package in Xcode:
 
-    xcodebuild -workspace 'color-ios.xcworkspace' -scheme color-ios build
-
-Run tests from Xcode or from command line:
-
-    xcodebuild test -workspace 'color-ios.xcworkspace' -scheme color-ios -destination 'platform=iOS Simulator,name=iPhone 15'
+    open Package.swift
 
 ### Include Library ###
 
-Include this repository by specifying it in a Podfile using a supported option.
+Use this library via SPM in your Package.swift:
 
-Pull from [CocoaPods](https://cocoapods.org/pods/color-ios):
+    dependencies: [
+        .package(url: "https://github.com/ngageoint/color-ios.git", branch: "release/2.0.0"),
+    ]
+    
+Or as a tagged release:
 
-    pod 'color-ios', '~> 1.0.2'
+    dependencies: [
+        .package(url: "https://github.com/ngageoint/color-ios.git", from: "2.0.0"),
+    ]
 
-Pull from GitHub:
+Reference it in your Package.swift target:
 
-    pod 'color-ios', :git => 'https://github.com/ngageoint/color-ios.git', :branch => 'master'
-    pod 'color-ios', :git => 'https://github.com/ngageoint/color-ios.git', :tag => '1.0.2'
-
-Include as local project:
-
-    pod 'color-ios', :path => '../color-ios'
+    .target(
+        name: "Grid",
+        dependencies: [
+            .product(name: "Color", package: "color-ios"),
+        ],
+    ), 
 
 ### Swift ###
 
-To use from Swift, import the color-ios bridging header from the Swift project's bridging header
-
-    #import "color-ios-Bridging-Header.h"
+To use from Swift:
 
 ```swift
+import Color
 
 let rgb : CLRColor = CLRColor.init(red:154, andGreen:205, andBlue:50)
 let rgba : CLRColor = CLRColor.init(red:255, andGreen:165, andBlue:0, andAlpha:64)

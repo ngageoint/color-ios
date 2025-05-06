@@ -6,7 +6,7 @@
 //  Copyright © 2022 NGA. All rights reserved.
 //
 
-#import "CLRColorUtils.h"
+#import <Color/CLRColorUtils.h>
 
 NSString *const hexColorPattern = @"^#?(([0-9a-fA-F]{3}){1,2}|([0-9a-fA-F]{4}){1,2})$";
 NSString *const hexSingleColorPattern = @"^[0-9a-fA-F]{1,2}$";

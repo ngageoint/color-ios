@@ -4,9 +4,9 @@ Adheres to [Semantic Versioning](http://semver.org/).
 
 ---
 
-## 1.0.3 (TBD)
+## 2.0.0 (6-5-2025)
 
-* TBD
+* Updated to support Swift Package Manager
 
 ## [1.0.2](https://github.com/ngageoint/color-ios/releases/tag/1.0.2) (11-07-2023)
 

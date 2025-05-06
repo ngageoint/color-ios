@@ -13,8 +13,21 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
-    - name: Install
-      run: pod install
+      uses: actions/checkout@v4
     - name: Build
-      run: xcodebuild build-for-testing -workspace color-ios.xcworkspace -scheme color-ios -destination 'platform=iOS Simulator,OS=latest,name=iPhone 14'
+      run: |
+        iphone_names=$(xcrun simctl list devices available --json | jq -r '.devices | to_entries[] | .value[] | select(.name | test("^iPhone [0-9]+")) | .name')
+        latest_iphone=$(echo "$iphone_names" | sort | tail -n 1)
+        echo "latest_iphone: $latest_iphone"
+        xcodebuild build -scheme Color -destination "platform=iOS Simulator,OS=latest,name=$latest_iphone"
+
+    - name: Test
+      run: |
+        iphone_names=$(xcrun simctl list devices available --json | jq -r '.devices | to_entries[] | .value[] | select(.name | test("^iPhone [0-9]+")) | .name')
+        latest_iphone=$(echo "$iphone_names" | sort | tail -n 1)
+        echo "latest_iphone: $latest_iphone"
+        xcodebuild test -scheme Color -destination "platform=iOS Simulator,OS=latest,name=$latest_iphone"      
+
+
+
+
