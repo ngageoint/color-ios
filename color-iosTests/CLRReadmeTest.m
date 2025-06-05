@@ -7,8 +7,9 @@
 //
 
 #import "CLRReadmeTest.h"
-#import "CLRColor.h"
-#import "CLRColorConstants.h"
+
+@import Color;
+
 
 @implementation CLRReadmeTest
 

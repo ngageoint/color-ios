@@ -6,7 +6,7 @@
 //  Copyright © 2022 NGA. All rights reserved.
 //
 
-#import "CLRColorConstants.h"
+#import <Color/CLRColorConstants.h>
 
 NSString * const CLR_COLOR_BLACK = @"#000000";
 NSString * const CLR_COLOR_BLUE = @"#0000FF";

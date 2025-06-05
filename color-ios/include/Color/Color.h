@@ -9,5 +9,8 @@
 #ifndef color_ios_color_ios_h
 #define color_ios_color_ios_h
 
+#import <Color/CLRColor.h>
+#import <Color/CLRColorConstants.h>
+#import <Color/CLRColorUtils.h>
 
 #endif

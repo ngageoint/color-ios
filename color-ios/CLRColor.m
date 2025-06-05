@@ -6,9 +6,9 @@
 //  Copyright © 2022 NGA. All rights reserved.
 //
 
-#import "CLRColor.h"
-#import "CLRColorUtils.h"
-#import "CLRColorConstants.h"
+#import <Color/CLRColor.h>
+#import <Color/CLRColorUtils.h>
+#import <Color/CLRColorConstants.h>
 
 @implementation CLRColor
 

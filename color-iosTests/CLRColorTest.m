@@ -6,11 +6,9 @@
 //  Copyright © 2022 NGA. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+@import Color;
 #import "CLRTestUtils.h"
-#import "CLRColor.h"
-#import "CLRColorUtils.h"
-#import "CLRColorConstants.h"
 
 @interface CLRColorTest : XCTestCase
 

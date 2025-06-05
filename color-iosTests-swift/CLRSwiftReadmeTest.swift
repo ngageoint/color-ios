@@ -7,14 +7,16 @@
 //
 
 import XCTest
+import Color
 
 class CLRSwiftReadmeTest: XCTestCase{
     
     /**
-     * Test Color
+     * Test Color for Readme.md
      */
     func testColor(){
-
+        // Comment out for unused variable compiler warnings
+        /*
         let rgb : CLRColor = CLRColor.init(red:154, andGreen:205, andBlue:50)
         let rgba : CLRColor = CLRColor.init(red:255, andGreen:165, andBlue:0, andAlpha:64)
         let rgbOpacity : CLRColor = CLRColor.init(red:255, andGreen:165, andBlue:0, andOpacity:0.25)
@@ -51,7 +53,7 @@ class CLRSwiftReadmeTest: XCTestCase{
         let hue : Float = color.hue()
         let saturation : Float = color.saturation()
         let lightness : Float = color.lightness()
-         
+     */
     }
     
 }
